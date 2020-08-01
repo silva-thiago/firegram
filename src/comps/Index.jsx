@@ -12,8 +12,8 @@ const Index = () => {
       </header>
       <main role='main'>
         <div className='container'>
-          <h1>Photographies</h1>
-          <p>
+          <h1 className='text-center'>Photographies</h1>
+          <p className='text-center'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores architecto culpa.
           </p>
         </div>
@@ -21,6 +21,7 @@ const Index = () => {
       <footer className='footer'>
         <div className='container'>
           <span className='text-muted'>© 2020 Thiago Silva</span>
+          <span className='text-muted'>The Firegram was built with ReactJS + Firebase</span>
         </div>
       </footer>
     </React.Fragment>
