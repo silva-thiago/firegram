@@ -1,5 +1,7 @@
 import React from 'react'
 
+import UploadForm from './UploadForm'
+
 const Index = () => {
   return (
     <React.Fragment>
@@ -16,6 +18,7 @@ const Index = () => {
           <p className='text-center'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores architecto culpa.
           </p>
+          <UploadForm />
         </div>
       </main>
       <footer className='footer'>
