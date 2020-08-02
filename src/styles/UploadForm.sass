@@ -1,0 +1,46 @@
+/** upload form styles **/
+form
+  display: grid
+  grid-template-columns: minmax(960px, 100%)
+  margin: 1rem auto 1rem
+  text-align: center
+
+/** .inputfile
+	width: 0.1px
+	height: 0.1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+	z-index: -1 **/
+
+.inputfile + label
+  border: 1px solid rgb(237, 137, 54)
+  border-radius: 2rem
+  color: rgb(237, 137, 54)
+  display: inline-block
+  font-size: 1.5rem
+  font-weight: 700
+  height: 2rem
+  line-height: 2rem
+  margin: .5rem auto
+  width: 2rem
+
+.inputfile:focus + label,
+.inputfile + label:hover
+  background: rgb(237, 137, 54)
+  color: white
+
+.inputfile:focus
+	outline-color: 1px dotted rgb(123, 52, 30)
+	outline-color: -webkit-focus-ring-color auto .5rem
+
+.output
+  font-size: 1rem
+  padding: 1rem 0
+
+.error
+  color: rgb(229, 62, 62)
+
+/** image grid styles **/
+
+/** modal styles **/
