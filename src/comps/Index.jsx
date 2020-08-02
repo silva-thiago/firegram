@@ -20,7 +20,7 @@ const Index = () => {
         <div className='container'>
           <h1 className='text-center'>Photographies</h1>
           <p className='text-center'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores architecto culpa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
           <UploadForm />
           <ImageGrid setSelectedImg={setselectedImg} />
