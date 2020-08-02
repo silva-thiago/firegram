@@ -3,14 +3,14 @@ import useFirestore from '../hooks/useFirestore'
 
 import '../styles/ImageGrid.sass'
 
-const ImageGrid = () => {
+const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore('images')
 
   return (
     <React.Fragment>
       <div className='img-grid'>
         {docs && docs.map(doc => (
-          <div className='img-wrap' key={doc.id}>
+          <div className='img-wrap' key={doc.id} onClick={() => setSelectedImg(doc.url)}>
             <img src={doc.url} alt='Uploaded file' />
           </div>
         ))}

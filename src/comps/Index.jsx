@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import UploadForm from './UploadForm'
 import ImageGrid from './ImageGrid'
+import Modal from './Modal'
 
 const Index = () => {
+  const [selectedImg, setselectedImg] = useState(null)
+
   return (
     <React.Fragment>
       <header>
@@ -20,7 +23,8 @@ const Index = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores architecto culpa.
           </p>
           <UploadForm />
-          <ImageGrid />
+          <ImageGrid setSelectedImg={setselectedImg} />
+          {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setselectedImg} />}
         </div>
       </main>
       <footer className='footer'>
