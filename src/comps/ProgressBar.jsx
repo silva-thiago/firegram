@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import useStorage from '../hooks/useStorage'
+import { motion } from 'framer-motion'
 
 import '../styles/ProgressBar.sass'
 
@@ -14,7 +15,7 @@ const ProgressBar = ({ file, setFile }) => {
 
   return (
     <React.Fragment>
-      <div className='progress-bar' style={{ width: progress + '%' }}></div>
+      <motion.div className='progress-bar' style={{ width: progress + '%' }} initial={{ width: 0 }} animate={{ width: progress + '%' }}></motion.div>
     </React.Fragment>
   )
 }
