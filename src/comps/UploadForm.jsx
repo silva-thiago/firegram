@@ -1,4 +1,8 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
+
+import ProgressBar from './ProgressBar'
+
+import '../styles/UploadForm.sass'
 
 const UploadForm = () => {
   const [file, setFile] = useState(null)
@@ -8,7 +12,7 @@ const UploadForm = () => {
 
   const changeHandler = (e) => {
     let selected = e.target.files[0]
-    
+
     if (selected && types.includes(selected.type)) {
       setFile(selected)
       setError('')
@@ -20,11 +24,15 @@ const UploadForm = () => {
 
   return (
     <React.Fragment>
-      <input type='file' onChange={changeHandler} />
-      <div className='output'>
-        { error && <span className='error'>{ error }</span> }
-        { file && <div>{ file.name }</div> }
-      </div>
+      <form>
+        <input className='inputfile' type='file' name='file' onChange={changeHandler} />
+        <label htmlFor='file'>+</label>
+        <div className='output'>
+          {error && <span className='error'>{error}</span>}
+          {file && <div>{file.name}</div>}
+          {file && <ProgressBar file={file} setFile={setFile} />}
+        </div>
+      </form>
     </React.Fragment>
   )
 }
