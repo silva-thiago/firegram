@@ -2,7 +2,7 @@ import React from 'react'
 
 import Index from './comps/Index'
 
-import './App.sass'
+import './styles/App.sass'
 
 const App = () => {
   return (
