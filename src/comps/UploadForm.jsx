@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 import ProgressBar from './ProgressBar'
-
-import '../styles/UploadForm.sass'
 
 const UploadForm = () => {
   const [file, setFile] = useState(null)

@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import ImageGrid from './ImageGrid'
 import Modal from './Modal'
-
-import '../styles/Layout.sass'
 
 const Index = () => {
   const [selectedImg, setselectedImg] = useState(null)

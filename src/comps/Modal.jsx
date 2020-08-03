@@ -1,7 +1,4 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-
-import '../styles/Modal.sass'
 
 const Modal = ({ selectedImg, setSelectedImg }) => {
   const handleClick = (e) => {
