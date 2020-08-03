@@ -3,7 +3,7 @@ import 'firebase/storage'
 import 'firebase/firestore'
 
 // Your web app's Firebase configuration
-let firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBFRAL62GlNrGKyD15glc7KVvFp1eE0sdQ",
   authDomain: "firegram-manager.firebaseapp.com",
   databaseURL: "https://firegram-manager.firebaseio.com",
