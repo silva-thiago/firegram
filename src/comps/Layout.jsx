@@ -27,7 +27,7 @@ const Index = () => {
       </main>
       <footer className='footer'>
         <div className='container'>
-          <span className='text-muted'>© 2020 Thiago Silva</span>
+          <span className='text-muted'>© 2020 <a href="https://github.com/silva-thiago" target="_blank" rel="noopener noreferrer">Thiago Silva</a></span>
           <span className='text-muted'>The Firegram was built with ReactJS + Firebase</span>
         </div>
       </footer>
