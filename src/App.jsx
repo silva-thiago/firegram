@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Index from './comps/Index'
+import Layout from './comps/Layout'
 
 import './styles/App.sass'
 
 const App = () => {
   return (
     <React.Fragment>
-      <Index />
+      <Layout />
     </React.Fragment>
   )
 }
