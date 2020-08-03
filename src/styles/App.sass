@@ -1,18 +1,43 @@
-/* base styles & title */
-.navbar
-  padding: 0 2rem 0
-  position: fixed
-  vertical-align: top
+/** index styles **/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400700&display=swap')
 
-  .navbar-brand
-    color: rgb(237, 137, 54)
+$serif: 'Noto Serif', serif
+$sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+$monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
 
-.container
+*
+  box-sizing: content-box
+
+body
+  background-color: rgb(247, 250, 252)
   display: grid
-  grid-template-columns: minmax(960px, 100%)
+  grid-template-rows: auto 1fr auto
+  font-family: $serif
+  font-size: calc(.5rem + 1vmin)
+  font-weight: 400
+  height: 100vh
+  letter-spacing: 0
+  line-height: 1.5
+  margin: 0
+  padding: 0
+  text-rendering: optimizeLegibility // Support for Safari and Chrome
+  text-transform: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
-.text-center
-  text-align: center
+  header
+    grid-column: 1 / 4
 
-.text-muted
-  color: rgb(160, 174, 192)
+  main
+    flex-shrink: 0
+
+    .container
+      padding: 2rem 2rem 0
+
+  a
+    color: inherit
+    text-decoration: none
+  
+  footer > .container
+    margin-top: auto
+    padding: 2rem 2rem
