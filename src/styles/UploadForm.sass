@@ -1,42 +1,88 @@
 /** upload form styles **/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+
+@font-face
+  font-family: 'Material Icons'
+  font-style: normal
+  font-weight: 400
+  src: url(https://example.com/MaterialIcons-Regular.eot) // For IE6-8
+  src: local('Material Icons'), local('MaterialIcons-Regular'),
+  url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+  url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+  url(https://example.com/MaterialIcons-Regular.ttf) format('truetype')
+
 form
   display: grid
   grid-template-columns: minmax(960px, 100%)
+  height: auto
   margin: 1rem auto 1rem
   text-align: center
+  place-items: center
 
-/** .inputfile
-	width: 0.1px
-	height: 0.1px
-	opacity: 0
-	overflow: hidden
-	position: absolute
-	z-index: -1 **/
+input[type='file']
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  z-index: 101
+  position: relative
+  -moz-opacity: 0
 
-.inputfile + label
-  border: 1px solid rgb(237, 137, 54)
-  border-radius: 2rem
-  color: rgb(237, 137, 54)
-  display: inline-block
-  font-size: 1.5rem
-  font-weight: 700
-  height: 2rem
-  line-height: 2rem
-  margin: .5rem auto
-  width: 2rem
+  & + label[for='file']
+    border: .1rem solid rgb(237, 137, 54)
+    border-radius: 2rem
+    color: rgb(237, 137, 54)
+    display: grid
+    height: 3rem
+    margin: .5rem auto
+    // padding: .5rem 1rem
+    place-items: center
+    width: 3rem
 
-.inputfile:focus + label,
-.inputfile + label:hover
-  background: rgb(237, 137, 54)
-  color: white
+  &:focus + label[for='file'],
+  & + label[for='file']:hover
+    background: rgb(237, 137, 54)
+    border: .1rem solid rgb(221, 107, 32)
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
+    color: white
 
-.inputfile:focus
-	outline-color: 1px dotted rgb(123, 52, 30)
-	outline-color: -webkit-focus-ring-color auto .5rem
+  &:focus
+    outline-color: 1px dotted rgb(123, 52, 30)
+    outline-color: -webkit-focus-ring-color auto .5rem
 
 .output
+  // background-color: rgb(254, 235, 200)
+  border-color: .25rem solid rgb(123, 52, 30)
+  border-radius: .25rem
+  border-width: .25rem
+  color: rgb(123, 52, 30)
   font-size: 1rem
-  padding: 1rem 0
+  font-weight: 700
+  padding: .5rem 1rem
 
-.error
-  color: rgb(229, 62, 62)
+  .error
+    background-color: rgb(254, 215, 215)
+    border-color: .25rem solid rgb(229, 62, 62)
+    border-radius: .25rem
+    border-width: .25rem
+    color: rgb(229, 62, 62)
+    font-size: 1rem
+    font-weight: 700
+    padding: .5rem 1rem
+
+.material-icons
+  direction: ltr
+  display: inline-block
+  font-family: 'Material Icons'
+  font-feature-settings: 'liga' // Support for IE
+  font-size: 2rem // Preferred icon size
+  font-style: normal
+  font-weight: normal
+  letter-spacing: normal
+  line-height: normal
+  text-rendering: optimizeLegibility // Support for Safari and Chrome
+  text-transform: none
+  word-wrap: normal
+  white-space: nowrap
+  -webkit-font-smoothing: antialiased // Support for all WebKit browsers
+  -moz-osx-font-smoothing: grayscale // Support for Firefox
