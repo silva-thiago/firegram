@@ -1,4 +1,4 @@
-/** index styles **/
+/** app styles **/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400700&display=swap')
 
 $serif: 'Noto Serif', serif
@@ -9,9 +9,11 @@ $monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
   box-sizing: content-box
 
 body
+  align-items: center
   background-color: rgb(247, 250, 252)
+  color: rgb(26, 32, 44)
   display: grid
-  grid-template-rows: auto 1fr auto
+  // grid-template-rows: auto 1fr auto
   font-family: $serif
   font-feature-settings: 'liga' // Support for IE
   font-size: calc(.5rem + 1vmin)
@@ -20,6 +22,7 @@ body
   letter-spacing: normal
   line-height: normal
   height: 100vh
+  justify-content: center
   letter-spacing: 0
   line-height: normal
   margin: 0
