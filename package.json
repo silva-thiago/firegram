@@ -10,17 +10,14 @@
   "author": "thiagosilva <thiago.silva@imd.ufrn.br> (http://dev.thiagosilva.cc/)",
   "main": "https://github.com/silva-thiago/firegram.git#readme",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.17.1",
     "framer-motion": "^2.3.0",
+    "next": "^9.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
