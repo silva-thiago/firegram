@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import UploadForm from './UploadForm'
 import ImageGrid from './ImageGrid'
 import Modal from './Modal'
 
@@ -24,7 +23,6 @@ const Index = () => {
           <p className='text-center'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
-          <UploadForm />
           <ImageGrid setSelectedImg={setselectedImg} />
           {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setselectedImg} />}
         </div>
