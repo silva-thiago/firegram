@@ -28,7 +28,7 @@ const UploadForm = () => {
       <form>
         <motion.div whileTap={{ scale: 0.9 }}>
           <input type='file' name='file' id='file' onChange={changeHandler} />
-          <label htmlFor='file'><i class='material-icons'>add_photo_alternate</i></label>
+          <label htmlFor='file'><i className='material-icons'>add_a_photo</i></label>
         </motion.div>
         <div className='output'>
           {file && <div>{file.name}</div>}
