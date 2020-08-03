@@ -1,16 +1,6 @@
 /** upload form styles **/
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons')
 
-@font-face
-  font-family: 'Material Icons'
-  font-style: normal
-  font-weight: 400
-  src: url(https://example.com/MaterialIcons-Regular.eot) // For IE6-8
-  src: local('Material Icons'), local('MaterialIcons-Regular'),
-  url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-  url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-  url(https://example.com/MaterialIcons-Regular.ttf) format('truetype')
-
 form
   display: grid
   grid-template-columns: minmax(960px, 100%)
@@ -75,7 +65,7 @@ input[type='file']
   display: inline-block
   font-family: 'Material Icons'
   font-feature-settings: 'liga' // Support for IE
-  font-size: 2rem // Preferred icon size
+  font-size: calc(1rem + 1vmin) // Preferred icon size
   font-style: normal
   font-weight: normal
   letter-spacing: normal
